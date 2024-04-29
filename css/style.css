@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #432682;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    border: 2px solid #b1eec3;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input{
+    height: 6rem;
+    font-size: 1.5rem;
+    width: 80%;
+    padding-left: 10%;
+    border-radius: 7.5px 0px 0px 7.5px;
+    border: none;
+    
+}
+
+button#btn-add{
+    width: 20%;
+    background-color: #b1eec3dc;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    height: 6rem;
+    border-radius: 0px 7.5px 7.5px 0px;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    
+    padding-top: 2.5rem;
+}
+
+.item{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: center;
+    align-items: center;
+    background-color: #341572;
+    height: 5rem;
+    width: 100%;
+    box-shadow: 1rem 1rem 10px #28065A;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item-icon{
+    flex: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.item-nome{
+    flex: 55%;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+.item-btn{
+    flex: 25%;
+}
+
+#delete{
+    background-color: #F64851;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.bi-check-circle{
+    color: green;
+}
+
+.item.clicado{
+    background-color: #b1eec396;
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.671);
+}
+
